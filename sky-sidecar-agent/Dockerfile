@@ -2,7 +2,7 @@
      
     ENV LANG=C.UTF-8
      
-    RUN set -eux &amp;&amp; mkdir -p /usr/skywalking/agent/
+    RUN mkdir -p /usr/skywalking/agent/
      
     ADD apache-skywalking-apm-bin-es7/agent/ /usr/skywalking/agent/
      
