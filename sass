@@ -1,2 +1,3 @@
-From registry.cn-beijing.aliyuncs.com/liu_jiahui/test:python
-RUN npm install -g canvas --unsafe-perm
+From registry.cn-beijing.aliyuncs.com/liu_jiahui/test:test2
+RUN npm config set registry "https://registry.npmjs.org/"
+RUN npm install -g nodejs@12
