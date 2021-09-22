@@ -1,4 +1,2 @@
-From docker.io/library/node:12-alpine3.14
-RUN npm install chromedriver@2.46.0 --chromedriver_cdnurl=https://npm.taobao.org/mirrors/chromedriver
-RUN apk add python2
-RUN npm install -g canvas
+From registry.cn-beijing.aliyuncs.com/liu_jiahui/test:python
+RUN npm install -g canvas --unsafe-perm
