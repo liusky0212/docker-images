@@ -1,0 +1,1 @@
+FROM kubeedge/cloudcore:v1.9.2
