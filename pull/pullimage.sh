@@ -3,7 +3,7 @@ dockerRegistry="harbor.dev.21vianet.com/cube-studio/"
 
 mkdir -p $imagestore
 
-for i in `cat list`;
+for i in `cat /root/list`;
 do image=$i;
 echo "开始拉取镜像：$image"
 docker pull $image
