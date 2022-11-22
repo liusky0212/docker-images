@@ -1,4 +1,4 @@
 FROM docker:20.10.21-dind
 COPY pullimage.sh /root/
 COPY list /root
-RUN /bin/bash /root/pullimage.sh
+RUN sh /root/pullimage.sh
