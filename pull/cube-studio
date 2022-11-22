@@ -1,4 +1,4 @@
 FROM docker:20.10.21-dind
 COPY pullimage.sh /root/
-COPY list /root
-RUN sh /root/pullimage.sh
+COPY list /root 
+RUN cd /root &&for i in `cat /root/list`;do echo "开始拉取镜像：$i" ;docker pull $i;docker save -o $i.tar %i;done
