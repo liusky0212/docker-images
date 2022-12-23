@@ -1,4 +1,5 @@
-FROM docker:20.10.21-dind
-COPY pullimage.sh /root/
-COPY list /root 
-RUN cd /root &&for i in `cat /root/list`;do echo "开始拉取镜像：$i" ;docker pull $i;docker save -o $i.tar %i;done
+FROM gcr.io/ml-pipeline/visualization-server:1.6.0
+#FROM docker:20.10.21-dind
+#COPY pullimage.sh /root/
+#COPY list /root 
+#RUN cd /root &&for i in `cat /root/list`;do echo "开始拉取镜像：$i" ;docker pull $i;docker save -o $i.tar %i;done
