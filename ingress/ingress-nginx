@@ -1,1 +1,1 @@
-FROM nginx:alpha
+FROM nginx:1.21.6-alpha
